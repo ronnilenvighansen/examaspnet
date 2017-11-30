@@ -58,11 +58,6 @@ namespace ExamAspDotNet.Controllers
             return View();
         }
 
-        public IActionResult Update()
-        {
-            return View();
-        }
-
-        [HttpPost]
+        
     }
 }
