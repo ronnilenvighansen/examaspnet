@@ -33,7 +33,7 @@ namespace ExamAspDotNet
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Game/Error");
             }
 
             app.UseStaticFiles();
