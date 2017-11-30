@@ -1,0 +1,10 @@
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/bin/Debug/netcoreapp2.0/ExamAspDotNet.deps.json
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/bin/Debug/netcoreapp2.0/ExamAspDotNet.runtimeconfig.json
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/bin/Debug/netcoreapp2.0/ExamAspDotNet.runtimeconfig.dev.json
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/bin/Debug/netcoreapp2.0/ExamAspDotNet.dll
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/bin/Debug/netcoreapp2.0/ExamAspDotNet.pdb
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.csproj.CoreCompileInputs.cache
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.AssemblyInfoInputs.cache
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.AssemblyInfo.cs
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.dll
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.pdb
