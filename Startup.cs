@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ExamAspDotNet.Models.Entities;
+using ExamAspDotNet.Models;
 
 namespace ExamAspDotNet
 {
@@ -33,7 +35,7 @@ namespace ExamAspDotNet
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Game/Error");
             }
 
             app.UseStaticFiles();
@@ -42,7 +44,7 @@ namespace ExamAspDotNet
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Game}/{action=Index}/{id?}");
             });
         }
     }

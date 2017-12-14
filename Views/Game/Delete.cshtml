@@ -13,14 +13,12 @@
 
     <hr>
 
-    <a href="Index"><button>Archive</button></a>
-    <a href="Create"><button>Create New Game</button></a>
-    <a href="Search"><button>Search Archive</button></a>
+    <a href="/Game/Index"><button>Archive</button></a>
 
     <hr>
-    <form method="post" action="/Home/Delete">
+    <form method="post" action="/Game/Delete">
 <p>ID</p>
-        <input type="text" name="ID" placeholder="int"/>
+        <input type="number" required="required" name="ID" placeholder="number"/>
 
         <input type="submit"/>
     </form>

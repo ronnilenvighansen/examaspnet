@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ExamAspDotNet.Models;
 using ExamAspDotNet.Models.Entities;
+using Microsoft.EntityFrameworkCore;
+using System.Runtime.Serialization;
 
 namespace ExamAspDotNet.Controllers
 {
@@ -58,6 +60,20 @@ namespace ExamAspDotNet.Controllers
             return View();
         }
 
-        
-    }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id, [Bind("GameId,Name,Score,Genre,Developer,Publisher,Image")] Game game)
+        {
+            db.Update(game);
+            db.SaveChanges();
+            return View();
+        }
+    }   
 }
+
+   

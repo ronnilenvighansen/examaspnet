@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index for Game</title>
+    <title>Search</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-
 </head>
 <body>
     <div class="container">
-    <hr>
-
-    <a href="Create"><button>Create New Game</button></a>
-    <a href="Delete"><button>Delete Game</button></a>
-    <a href="Search"><button>Search Archive</button></a>
-   
-    <hr>
+        <hr>
+    <h1>Get specific game from database by entering its ID in the URL</h1>
+    <!-- <h1>Enter Game ID at the end of URL before leaving page!</h1>
+    <p>(Relative pathing is currently standing in the way of being able to leave page without screwing up pathing scheme)</p> -->
+    <br>
+    <a href="/Game/Index"><button>Archive</button></a>
+      
+        <hr>
     <table class="table table-striped">
-        
-        
-            <tr>
+
+         <tr>
                 <th>Name</th>
                 <th>Score</th>
                 <th>Genre</th>
@@ -29,19 +28,20 @@
 
         @foreach(var stud in @ViewBag.stud)        
         {
-            string x=@stud.Image;
-  
-    
-            <tr>
+            if(stud.GameId == @ViewBag.number){
+                string x=@stud.Image;
+                <tr>
                     <td> @stud.Name </td>
                     <td> @stud.Score </td>
                     <td> @stud.Genre </td> 
                     <td> @stud.Developer </td> 
                     <td> @stud.Publisher </td> 
                     <td><img src=@x alt="image" height="100" width="100"/></td>
-            </tr>
+                </tr>
+            }
         }
     </table>
+    
     
     </div>
 </body>
