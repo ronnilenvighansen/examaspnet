@@ -54,22 +54,21 @@ namespace ExamAspDotNet.Controllers
         public IActionResult Delete(int id)
         {
             Game gm = new Game(){GameId = id};
-            db.Games.Attach(gm);
             db.Games.Remove(gm);
             db.SaveChanges();
             return View();
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public IActionResult Edit()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Edit(int id, [Bind("GameId,Name,Score,Genre,Developer,Publisher,Image")] Game game)
+        public IActionResult Edit(Game gm)
         {
-            db.Update(game);
+            db.Update(gm);
             db.SaveChanges();
             return View();
         }

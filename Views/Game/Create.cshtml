@@ -12,31 +12,28 @@
     <h1>Game Create</h1>
 
     <hr>
-
-    <a href="/Game/Index"><button>Archive</button></a>
-
+        <a href="/Game/Index"><button>Archive</button></a>
     <hr>
-    <form method="post" action="/Game/Create">
-<p>Name</p>
-<label asp-for="Name" class="control-label"></label>
-        <input type="text" required="required" name="Name" placeholder="string"/>
-<br><br>
-<p>Score</p>
-        <input type="number" required="required" pattern="[0-9]{3}" min="0" max= "100" name="Score" placeholder="number"/>
-<br><br>
-<p>Genre</p>
-        <input type="text" required="required" name="Genre" placeholder="string"/>
-<br><br>
-<p>Developer</p>
-        <input type="text" required="required" name="Developer" placeholder="string"/>
-<br><br>
-<p>Publisher</p>
-        <input type="text" required="required" name="Publisher" placeholder="string"/>
-<br><br>
-<p>Image</p>
-        <input type="text" required="required" name="Image" placeholder="image url with extension"/>
-<br><br>
-        <input type="submit"/>
-    </form>
+<form method="post" action="/Game/Create">
+        <p>Name</p>
+                <input type="text" required="required" name="Name" placeholder="string"/>
+        <br><br>
+        <p>Score</p>
+                <input type="number" required="required" pattern="[0-9]{3}" min="0" max= "100" name="Score" placeholder="number"/>
+        <br><br>
+        <p>Genre</p>
+                <input type="text" required="required" name="Genre" placeholder="string"/>
+        <br><br>
+        <p>Developer</p>
+                <input type="text" required="required" name="Developer" placeholder="string"/>
+        <br><br>
+        <p>Publisher</p>
+                <input type="text" required="required" name="Publisher" placeholder="string"/>
+        <br><br>
+        <p>Image</p>
+                <input type="text" required="required" name="Image" placeholder="image url with extension"/>
+        <br><br>
+                <input type="submit"/>
+        </form>
 </body>
 </html>

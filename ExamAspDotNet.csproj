@@ -11,4 +11,11 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Properties\PublishProfiles\ExamAspDotNet - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\examaspdotnet1 - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
 </Project>

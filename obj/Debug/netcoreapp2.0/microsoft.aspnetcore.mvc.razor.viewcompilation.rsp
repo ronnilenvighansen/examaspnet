@@ -1,0 +1,14 @@
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet
+--output-path=obj/Debug/netcoreapp2.0/
+--application-name=ExamAspDotNet
+--content-root=/Users/ronnilenvighansen/Desktop/ExamAspDotNet
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Game/Create.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Game/Delete.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Game/Edit.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Game/Index.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Game/Search.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Shared/Error.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Shared/_Layout.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/Shared/_ValidationScriptsPartial.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/_ViewImports.cshtml
+--file=/Users/ronnilenvighansen/Desktop/ExamAspDotNet/Views/_ViewStart.cshtml

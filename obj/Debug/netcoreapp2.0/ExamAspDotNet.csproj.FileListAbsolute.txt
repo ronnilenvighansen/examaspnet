@@ -8,3 +8,4 @@
 /Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.AssemblyInfo.cs
 /Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.dll
 /Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.pdb
+/Users/ronnilenvighansen/Desktop/ExamAspDotNet/obj/Debug/netcoreapp2.0/ExamAspDotNet.csprojResolveAssemblyReference.cache
