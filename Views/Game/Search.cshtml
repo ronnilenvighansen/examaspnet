@@ -26,6 +26,11 @@
                 <th>Image</th>  
             </tr>
 
+<p>ID</p>
+        <input type="number" required="required" name="ID" placeholder="number"/>
+
+        <input type="submit"/>
+
         @foreach(var stud in @ViewBag.stud)        
         {
             if(stud.GameId == @ViewBag.number){
