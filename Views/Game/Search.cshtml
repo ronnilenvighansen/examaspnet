@@ -14,10 +14,18 @@
     <br>
     <a href="/Game/Index"><button>Archive</button></a>
       
-        <hr>
+    <hr>
+
+    <form method="post" action="/Game/Search">
+<p>ID</p>
+        <input type="number" required="required" name="ID" placeholder="number"/>
+
+        <input type="submit"/>
+    </form>
     <table class="table table-striped">
 
          <tr>
+                <th>GameId</th>
                 <th>Name</th>
                 <th>Score</th>
                 <th>Genre</th>
@@ -26,16 +34,12 @@
                 <th>Image</th>  
             </tr>
 
-<p>ID</p>
-        <input type="number" required="required" name="ID" placeholder="number"/>
-
-        <input type="submit"/>
-
         @foreach(var stud in @ViewBag.stud)        
         {
             if(stud.GameId == @ViewBag.number){
                 string x=@stud.Image;
                 <tr>
+                    <td> @stud.GameId </td>
                     <td> @stud.Name </td>
                     <td> @stud.Score </td>
                     <td> @stud.Genre </td> 

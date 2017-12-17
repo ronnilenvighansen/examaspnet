@@ -25,7 +25,6 @@ namespace ExamAspDotNet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<GameDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("GameConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

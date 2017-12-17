@@ -7,9 +7,9 @@ namespace ExamAspDotNet.Models
     {
         public DbSet<Game> Games { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionBuilder.UseSqlite("Filename=./ExamAspDotNet.db");
+            optionsBuilder.UseSqlite("Filename=./ExamAspDotNet.db");
         } 
         
     }

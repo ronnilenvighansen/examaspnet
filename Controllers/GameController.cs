@@ -66,13 +66,18 @@ namespace ExamAspDotNet.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Game gm)
+        public IActionResult Edit(int id, string name, string score, 
+                                  string genre, string developer, string publisher, string image)
         {
-            db.Update(gm);
+            Game gm = new Game() 
+            {GameId = id, Name = name, Score = score, Genre = genre, 
+                Developer = developer, Publisher = publisher, Image = image};
+            db.Games.Update(gm);
             db.SaveChanges();
             return View();
         }
     }   
 }
+
 
    
